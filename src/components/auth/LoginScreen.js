@@ -9,10 +9,16 @@ export const LoginScreen = () => {
         <input
           className="auth__input"
           type="text"
+          name="email"
           placeholder="Email"
           autoComplete="off"
         />
-        <input className="auth__input" type="password" placeholder="Password" />
+        <input
+          className="auth__input"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
         <button className="btn btn-primary btn-block" type="submit">
           Login
         </button>
