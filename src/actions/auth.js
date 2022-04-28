@@ -68,3 +68,16 @@ export const startRegisterWithEmailPasswordName = (email, password, name) => {
       });
   };
 };
+
+export const startLogout = () => {
+  return async (dispatch) => {
+    await firebase.auth().signOut();
+    dispatch(logout());
+  };
+};
+
+export const logout = () => {
+  return {
+    type: types.logout,
+  };
+};
