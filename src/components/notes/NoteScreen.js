@@ -12,11 +12,17 @@ export const NoteScreen = () => {
   const { body, title } = formValues
 
   const activeId = useRef(note.id)
+  const activeUrl = useRef(note.url)
 
   useEffect(() => {
     if (note.id !== activeId.current) {
       reset(note)
       activeId.current = note.id
+    }
+
+    if (note.url !== activeUrl.current) {
+      reset(note)
+      activeUrl.current = note.url
     }
   }, [note, reset])
 
@@ -49,10 +55,7 @@ export const NoteScreen = () => {
 
         {note.url && (
           <div className="notes__image">
-            <img
-              src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?"
-              alt="Imagen"
-            />
+            <img src={note.url} alt="Imagen" />
           </div>
         )}
       </div>
