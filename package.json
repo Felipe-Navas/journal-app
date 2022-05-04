@@ -48,6 +48,7 @@
   "devDependencies": {
     "@cfaester/enzyme-adapter-react-18": "^0.5.1",
     "cloudinary": "^1.29.1",
-    "enzyme-to-json": "^3.6.2"
+    "enzyme-to-json": "^3.6.2",
+    "redux-mock-store": "^1.5.4"
   }
 }
