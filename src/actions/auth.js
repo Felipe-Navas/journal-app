@@ -1,7 +1,7 @@
-import Swal from 'sweetalert2';
-import { types } from '../types/types';
-import { firebase, googleAuthProvider } from '../firebase/firebase-config';
-import { finishLoading, startLoading } from './ui';
+import Swal from 'sweetalert2'
+import { types } from '../types/types'
+import { firebase, googleAuthProvider } from '../firebase/firebase-config'
+import { finishLoading, startLoading } from './ui'
 import { noteLogout } from './notes'
 
 /**
@@ -17,8 +17,8 @@ export const login = (uid, displayName) => {
       uid,
       displayName,
     },
-  };
-};
+  }
+}
 
 /**
  *
@@ -28,22 +28,22 @@ export const login = (uid, displayName) => {
  */
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {
-    dispatch(startLoading());
+    dispatch(startLoading())
 
-    firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(({ user }) => {
-        dispatch(login(user.uid, user.displayName));
-        dispatch(finishLoading());
+        dispatch(login(user.uid, user.displayName))
+        dispatch(finishLoading())
       })
       .catch((err) => {
-        console.log(err);
-        dispatch(finishLoading());
-        Swal.fire('Error', err.message, 'error');
-      });
-  };
-};
+        console.log(err)
+        dispatch(finishLoading())
+        Swal.fire('Error', err.message, 'error')
+      })
+  }
+}
 
 export const startGoogleLogin = () => {
   return (dispatch) => {
@@ -51,10 +51,10 @@ export const startGoogleLogin = () => {
       .auth()
       .signInWithPopup(googleAuthProvider)
       .then(({ user }) => {
-        dispatch(login(user.uid, user.displayName));
-      });
-  };
-};
+        dispatch(login(user.uid, user.displayName))
+      })
+  }
+}
 
 export const startRegisterWithEmailPasswordName = (email, password, name) => {
   return (dispatch) => {
@@ -62,26 +62,26 @@ export const startRegisterWithEmailPasswordName = (email, password, name) => {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(async ({ user }) => {
-        await user.updateProfile({ displayName: name });
-        dispatch(login(user.uid, user.displayName));
+        await user.updateProfile({ displayName: name })
+        dispatch(login(user.uid, user.displayName))
       })
       .catch((err) => {
-        console.log(err);
-        Swal.fire('Error', err.message, 'error');
-      });
-  };
-};
+        console.log(err)
+        Swal.fire('Error', err.message, 'error')
+      })
+  }
+}
 
 export const startLogout = () => {
   return async (dispatch) => {
-    await firebase.auth().signOut();
-    dispatch(logout());
+    await firebase.auth().signOut()
+    dispatch(logout())
     dispatch(noteLogout())
-  };
-};
+  }
+}
 
 export const logout = () => {
   return {
     type: types.logout,
-  };
-};
+  }
+}
