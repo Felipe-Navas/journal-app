@@ -1,5 +1,4 @@
 /** * @jest-environment node */
-import { db } from '../../firebase/firebase-config'
 import { loadNotes } from '../../helpers/loadNotes'
 
 
