@@ -1,5 +1,6 @@
 {
   "name": "react-journal-app",
+  "homepage": "https://Felipe-Navas.github.io/react-journal-app",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
