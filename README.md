@@ -38,6 +38,6 @@ This README would normally document whatever steps are necessary to get your app
 
 ## Demo
 
-You can explore a live version of React Spa Heroes at the following URL:
+You can explore a live version of React Journal App at the following URL:
 
 https://Felipe-Navas.github.io/react-journal-app/
