@@ -26,8 +26,7 @@ jobs:
         REACT_APP_STORAGEBUCKET: ${{ secrets.REACT_APP_STORAGEBUCKET }}
         REACT_APP_MESSAGINGSENDERID: ${{ secrets.REACT_APP_MESSAGINGSENDERID }}
         REACT_APP_APPID: ${{ secrets.REACT_APP_APPID }}
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
