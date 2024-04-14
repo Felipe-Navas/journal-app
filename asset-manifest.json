@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-journal-app/static/css/main.931005e0.css",
-    "main.js": "/react-journal-app/static/js/main.452f08b9.js",
-    "index.html": "/react-journal-app/index.html",
-    "main.931005e0.css.map": "/react-journal-app/static/css/main.931005e0.css.map",
-    "main.452f08b9.js.map": "/react-journal-app/static/js/main.452f08b9.js.map"
+    "main.css": "/Felipe-Navas/react-journal-app/static/css/main.d2e00f87.css",
+    "main.js": "/Felipe-Navas/react-journal-app/static/js/main.8bf15bb1.js",
+    "index.html": "/Felipe-Navas/react-journal-app/index.html",
+    "main.d2e00f87.css.map": "/Felipe-Navas/react-journal-app/static/css/main.d2e00f87.css.map",
+    "main.8bf15bb1.js.map": "/Felipe-Navas/react-journal-app/static/js/main.8bf15bb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.931005e0.css",
-    "static/js/main.452f08b9.js"
+    "static/css/main.d2e00f87.css",
+    "static/js/main.8bf15bb1.js"
   ]
 }
