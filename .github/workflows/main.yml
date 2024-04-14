@@ -24,6 +24,7 @@ jobs:
           REACT_APP_MESSAGINGSENDERID: ${{ secrets.REACT_APP_MESSAGINGSENDERID }}
           REACT_APP_APPID: ${{ secrets.REACT_APP_APPID }}
         run: |
+          npm login
           npm install
           npm run build
 
