@@ -25,7 +25,9 @@ jobs:
           REACT_APP_APPID: ${{ secrets.REACT_APP_APPID }}
         run: |
           npm install
-          npm run-script build
+          npm run build
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
