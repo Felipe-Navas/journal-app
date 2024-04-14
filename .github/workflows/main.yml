@@ -24,7 +24,7 @@ jobs:
           REACT_APP_MESSAGINGSENDERID: ${{ secrets.REACT_APP_MESSAGINGSENDERID }}
           REACT_APP_APPID: ${{ secrets.REACT_APP_APPID }}
         run: |
-          npm login
+          npm config set registry https://registry.npmjs.org
           npm install
           npm run build
 
