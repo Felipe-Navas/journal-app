@@ -6,6 +6,12 @@ A React app for Journal
 
 A React app for Journal
 
+## Demo
+
+You can explore a live version of React Journal App at the following URL:
+
+https://Felipe-Navas.github.io/react-journal-app
+
 ## Getting Started
 
 ### Dependencies

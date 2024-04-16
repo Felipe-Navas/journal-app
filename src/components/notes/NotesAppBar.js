@@ -23,7 +23,7 @@ export const NotesAppBar = () => {
 
   return (
     <div className="notes__appbar">
-      <span>28 de agosto de 2022</span>
+      <span>28 de agosto de 2024</span>
 
       <input
         id="fileSelector"
