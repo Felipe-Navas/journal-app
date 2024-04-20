@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/Felipe-Navas/react-journal-app/issues"
   },
-  "homepage": "https://github.com/Felipe-Navas/react-journal-app",
+  "homepage": "https://Felipe-Navas.github.io/react-journal-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
